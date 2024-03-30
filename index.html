@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="balance">
+        <div>
+          <h6 class="bal-head">My balance</h6>
+          <h2 class="bal" id="balance-amount">$921.48</h2>
+        </div>
+        <img src="images/logo.svg" alt="" srcset="" class="logo">
+      </div>
+      <div class="spendings">
+        <h2 class="spend-head">Spending - Last 7 days</h2>
+        <div class="bar-wrapper">
+          <div class="mon-bar bar" id="mon"><p class="mon-amount day-amount" id="mon-amount"></p></div>
+          <div class="tue-bar bar" id="tue"><p class="tue-amount day-amount" id="tue-amount"></p></div>
+          <div class="wed-bar bar" id="wed"><p class="wed-amount day-amount" id="wed-amount"></p></div>
+          <div class="thu-bar bar" id="thu"><p class="thu-amount day-amount" id="thu-amount"></p></div>
+          <div class="fri-bar bar" id="fri"><p class="fri-amount day-amount" id="fri-amount"></p></div>
+          <div class="sat-bar bar" id="sat"><p class="sat-amount day-amount" id="sat-amount"></p></div>
+          <div class="sun-bar bar" id="sun"><p class="fri-amount day-amount" id="sun-amount"></p></div>
+        </div>
+        <div class="day-wrapper">
+          <p>mon</p>
+          <p>tue</p>
+          <p>wed</p>
+          <p>thu</p>
+          <p>fri</p>
+          <p>sat</p>
+          <p>sun</p>
+        </div>
+        <hr>
+        <div class="month-total">
+          <div class="month-amount">
+            <p class="total-head">Total this week</p>
+            <h1 class="total-amount" id="week-amount">$478.33</h1>
+          </div>
+          <div class="increase-month">
+            <p class="increase-amount">+2.4%</p>
+            <p class="increase-head">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p id="main"></p>
+  <div class="attribution"> 
+    Coded by <a href="#">Gautam</a>.
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
